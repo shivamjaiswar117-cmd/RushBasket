@@ -71,7 +71,7 @@ const Signup = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:4000/api/user/register',
+        'https://rush-basket-backend.vercel.app/api/user/register',
         {
           name: formData.name,
           email: formData.email,

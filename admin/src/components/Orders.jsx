@@ -18,7 +18,7 @@ const OrdersPage = () => {
 
   const fetchOrders = async () => {
     try {
-      const { data } = await axios.get('http://localhost:4000/api/orders');
+      const { data } = await axios.get('https://rush-basket-backend.vercel.app/api/orders');
       setOrders(data);
       setFilteredOrders(data);
     } catch (error) {
@@ -56,7 +56,7 @@ const OrdersPage = () => {
   const updateOrderStatus = async (orderId, newStatus) => {
     try {
       await axios.put(
-        `http://localhost:4000/api/orders/${orderId}`,
+        `https://rush-basket-backend.vercel.app/api/orders/${orderId}`,
         { status: newStatus }
       );
       setOrders(prev =>
@@ -351,7 +351,7 @@ const OrdersPage = () => {
                         >
                           {item.imageUrl ? (
                             <img
-                              src={`http://localhost:4000${item.imageUrl}`}
+                              src={`https://rush-basket-backend.vercel.app${item.imageUrl}`}
                               alt={item.name}
                               className={styles.modalOrderImage}
                             />

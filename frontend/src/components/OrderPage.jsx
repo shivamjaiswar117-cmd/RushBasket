@@ -20,7 +20,7 @@ const UserOrdersPage = () => {
   const fetchAndFilterOrders = async () => {
     try {
       // 2) Fetch ALL orders publicly
-      const resp = await axios.get('http://localhost:4000/api/orders');
+      const resp = await axios.get('https://rush-basket-backend.vercel.app/api/orders');
       const allOrders = resp.data;
 
       // 3) Client‑side filter by customer.email
@@ -245,7 +245,7 @@ const UserOrdersPage = () => {
                         >
                           {item.imageUrl ? (
                             <img
-                              src={`http://localhost:4000${item.imageUrl}`}
+                              src={`https://rush-basket-backend.vercel.app${item.imageUrl}`}
                               alt={item.name}
                               className="w-16 h-16 object-cover rounded-lg mr-4"
                             />

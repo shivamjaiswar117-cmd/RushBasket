@@ -69,7 +69,7 @@ const CheckoutPage = () => {
     try {
       const token = localStorage.getItem('authToken');
       const res = await axios.post(
-        'http://localhost:4000/api/orders',
+        'https://rush-basket-backend.vercel.app/api/orders',
         order,
         {
           headers: {
@@ -292,7 +292,7 @@ const CheckoutPage = () => {
                     <div className={checkoutStyles.cartImage}>
                       {item.imageUrl ? (
                         <img
-                          src={`http://localhost:4000${item.imageUrl}`}
+                          src={`https://rush-basket-backend.vercel.app${item.imageUrl}`}
                           alt={item.name}
                           className="w-full h-full object-cover rounded"
                           onError={e => {

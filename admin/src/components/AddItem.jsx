@@ -61,7 +61,7 @@ export default function AddItemPage() {
         body.append("image", formData.image);
       }
 
-      const res = await axios.post("http://localhost:4000/api/items", body, {
+      const res = await axios.post("https://rush-basket-backend.vercel.app/api/items", body, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

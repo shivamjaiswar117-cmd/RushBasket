@@ -27,7 +27,7 @@ const VerifyPaymentPage = () => {
         }
 
         axios
-            .get('http://localhost:4000/api/orders/confirm', {
+            .get('https://rush-basket-backend.vercel.app/api/orders/confirm', {
                 params: { session_id },
                 headers: token
                     ? { Authorization: `Bearer ${token}` }
