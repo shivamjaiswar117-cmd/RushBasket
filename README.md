@@ -1,6 +1,6 @@
-# 🛒 RushBasket – Food Delivery Web Application
+# 🛒 RushBasket – Grocery Delivery Project
 
-RushBasket is a full-stack food delivery web application that allows users to browse food items, manage their cart, place orders, and make online payments.
+RushBasket is a full-stack grocery delivery web application that allows users to browse grocery items, manage their cart, place orders, and make online payments.
 
 The project also includes a separate admin panel for managing products and orders.
 
